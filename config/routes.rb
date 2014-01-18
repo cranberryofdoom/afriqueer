@@ -3,6 +3,9 @@ Afriqueer::Application.routes.draw do
   ActiveAdmin.routes(self)
   root :to => 'main#home'
   get "about", to: "main#about"
+  get "submit", to: "main#submit"
+  get "contact", to: "main#contact"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
