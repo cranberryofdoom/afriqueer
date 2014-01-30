@@ -1,4 +1,5 @@
-<div> 
-
-
-</div> 
+ <%= semantic_form_for @post do |f| %>
+    <%= f.inputs :title, :markdown_content, :author %>
+    <%= f.actions :submit %>
+  <% end %>
+<div> you may add your email at the end of your submission if you choose. Your email will remain anonymous and will only be used to contact you for further information about your post</div>

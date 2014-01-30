@@ -1,6 +1,7 @@
 Afriqueer::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+  resources :posts
   root :to => 'main#home'
   get "about", to: "main#about"
   get "submit", to: "main#submit"

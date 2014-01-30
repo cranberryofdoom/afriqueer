@@ -1,18 +1,23 @@
 ActiveAdmin.register Post do
-  permit_params :title, :content, :author
+  permit_params :title, :markdown_content, :author, :approved, :video, :html_content
 
   index do
     column :title
-    column :content
+    column :markdown_content
     column :author
+    column :approved
+    column :video
     default_actions
   end
 
   form do |f|
     f.inputs "Post Details" do
       f.input :title
-      f.input :content
+      f.input :markdown_content
       f.input :author
+      f.input :approved
+      f.input :video
+      f.input :html_content
     end
     f.actions
   end

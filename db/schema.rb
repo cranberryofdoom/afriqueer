@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140118203946) do
+ActiveRecord::Schema.define(version: 20140130060956) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -50,8 +50,11 @@ ActiveRecord::Schema.define(version: 20140118203946) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
-    t.string   "content"
+    t.text     "markdown_content", limit: 255
     t.string   "author"
+    t.boolean  "approved",                     default: false
+    t.boolean  "video",                        default: false
+    t.text     "html_content"
   end
 
 end

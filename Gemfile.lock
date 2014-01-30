@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/gregbell/active_admin.git
-  revision: 8a6f422890f51516fc4bc20484b075f354429d69
+  remote: https://github.com/gregbell/active_admin
+  revision: 99da460c38804de18fbb96fd07a0a62f05fca55f
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0)
@@ -48,6 +48,7 @@ GEM
     arel (4.0.1)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
+    bluecloth (2.2.0)
     bootstrap-sass (3.0.3.0)
       sass (~> 3.2)
     bourbon (3.1.8)
@@ -168,13 +169,15 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  bluecloth
   bootstrap-sass (~> 3.0.3.0)
   coffee-rails (~> 4.0.0)
+  formtastic
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks
   rails (= 4.0.2)
-  sass-rails (~> 4.0.0)
+  sass-rails (~> 4)
   sdoc
   sqlite3
   turbolinks
