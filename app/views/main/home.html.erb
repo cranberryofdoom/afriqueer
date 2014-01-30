@@ -1,27 +1,25 @@
-<div class="post">
 	<% Post.all.limit(10).each do |p| %>
 	<%= render p %>
 	<% end %>
-</div>
-<div class="post">
-	<div class="post-header clearfix">
-		<div class="header-icon">
-			<%= image_tag "video.svg" %>
+	<div class="post">
+		<div class="post-header clearfix">
+			<div class="header-icon">
+				<%= image_tag "video.svg" %>
+			</div>
+			<div class="header-border">
+				<%= image_tag "border.svg" %>
+			</div>
+			<div class="header-title">
+				<h1>Video Title</h1>
+			</div>
 		</div>
-		<div class="header-border">
-			<%= image_tag "border.svg" %>
-		</div>
-		<div class="header-title">
-			<h1>Video Title</h1>
+		<div class="post-body clearfix">
+			<p>
+				Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor - hodor. Hodor. Hodor, hodor. Hodor.
+				Hodor, hodor; hodor hodor?! Hodor hodor - hodor hodor. Hodor, HODOR hodor, hodor hodor hodor hodor?
+				Hodor. Hodor hodor... Hodor hodor hodor... Hodor hodor hodor?! Hodor hodor - hodor hodor hodor, hodor,
+				hodor hodor. Hodor! Hodor hodor, hodor, hodor. Hodor hodor - HODOR hodor, hodor hodor. Hodor, hodor -
+				hodor... Hodor hodor HODOR hodor, hodor hodor?!
+			</p>
 		</div>
 	</div>
-	<div class="post-body clearfix">
-		<p>
-			Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor - hodor. Hodor. Hodor, hodor. Hodor.
-			Hodor, hodor; hodor hodor?! Hodor hodor - hodor hodor. Hodor, HODOR hodor, hodor hodor hodor hodor?
-			Hodor. Hodor hodor... Hodor hodor hodor... Hodor hodor hodor?! Hodor hodor - hodor hodor hodor, hodor,
-			hodor hodor. Hodor! Hodor hodor, hodor, hodor. Hodor hodor - HODOR hodor, hodor hodor. Hodor, hodor -
-			hodor... Hodor hodor HODOR hodor, hodor hodor?!
-		</p>
-	</div>
-</div>
