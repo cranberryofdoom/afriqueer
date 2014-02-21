@@ -1,0 +1,44 @@
+#new_post {
+	ol {
+		list-style: none;
+		padding: 0;
+		li {
+			padding-bottom: 20px;
+			width: 200px;
+			float: right;
+			input {
+				background-color: $black;
+				color: white;
+				border: none;
+				padding: 10px 0;
+			}
+		}
+	}
+	input, textarea {
+		width: 75%;
+	}
+	textarea {
+		height: 300px;
+	}
+	label {
+		color: $black;
+		font-family: "Lato", sans-serif;
+		font-size: 16px;
+		font-weight: 900;
+		width: 20%;
+	}
+	input, textarea, label {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	input, textarea, label {
+		width: 100% !important;
+	}
+	ol {
+		li {
+			width: 100% !important;
+		}
+	}
+}

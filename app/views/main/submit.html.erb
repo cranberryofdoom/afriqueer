@@ -1,5 +1,24 @@
- <%= semantic_form_for @post do |f| %>
-    <%= f.inputs :title, :markdown_content, :author %>
-    <%= f.actions :submit %>
-  <% end %>
-<div> you may add your email at the end of your submission if you choose. Your email will remain anonymous and will only be used to contact you for further information about your post</div>
+<div class="content-container">
+	<div class="content-header clearfix">
+		<div class="header-border">
+			<%= image_tag "border.svg" %>
+		</div>
+		<div class="header-title">
+			<h1>Submit an Entry!</h1>
+		</div>
+	</div>
+	<div class="content-body">
+		<%= semantic_form_for @post do |f| %>
+		<%= f.label :title, "Title" %>
+		<%= f.text_field :title %>
+		<%= f.label :markdown_content, "Content" %>
+		<%= f.text_area :markdown_content %>
+		<%= f.label :author, "Author**" %>
+		<%= f.text_field :author %>
+		<%= f.actions :submit %>
+		<% end %>
+		<div>
+			**You may add your email at the end of your submission if you choose. Your email will remain anonymous and will only be used to contact you for further information about your post.
+		</div>
+	</div>
+</div>

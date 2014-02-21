@@ -1,0 +1,15 @@
+#nav {
+	border-top: 1px solid $black;
+	border-bottom: 1px solid $black;
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom:  50px;
+	li {
+		a {
+			font-family: "Lato", sans-serif !important;
+			font-size: 20px;
+			font-weight: 300;
+			color: $black;
+		}
+	}
+}

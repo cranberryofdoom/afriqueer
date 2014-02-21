@@ -1,7 +1,7 @@
 <% @truncate ||= false %>
 <% if post.approved? %>
-<div class="post">
-	<div class="post-header clearfix">
+<div class="post content-container">
+	<div class="content-header clearfix">
 		<div class="header-icon">
 		<% if post.video? %>
 			<%= image_tag "video.svg" %>
@@ -17,7 +17,7 @@
 			<h1><%= post.title %></h1>
 		</div>
 	</div>
-	<div class="post-body clearfix">
+	<div class="content-body clearfix">
 		<p>
 			<% if @truncate %>
 				<%= post.html_content.truncate(1000).html_safe %>
