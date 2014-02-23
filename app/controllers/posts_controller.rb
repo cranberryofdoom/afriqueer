@@ -10,10 +10,12 @@ class PostsController < ApplicationController
         @post = Post.new(post_params)
 
         if @post.save
-            render 'main/submit',  :notice => "Your post was saved"
-        else
-            render "new"
+            render "success"            
         end
+    end
+
+    def show
+        @post = Post.find_by_id(params[:id])
     end
 
     private

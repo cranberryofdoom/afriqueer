@@ -1,9 +1,8 @@
-<% @truncate ||= false %>
-<% if post.approved? %>
+<% if @post.approved? %>
 <div class="post content-container">
 	<div class="content-header clearfix">
 		<div class="header-icon">
-		<% if post.video? %>
+		<% if @post.video? %>
 			<%= image_tag "video.svg" %>
 		<%else%>
 			<%= image_tag "post.svg" %>
@@ -14,18 +13,17 @@
 			<%= image_tag "border.svg" %>
 		</div>
 		<div class="header-title">
-			<h1><%= post.title %></h1>
+			<h1><%= @post.title %></h1>
 		</div>
 	</div>
 	<div class="content-body clearfix">
 		<p>
 			<% if @truncate %>
-				<%= post.html_content.truncate(1000).html_safe %>
+				<%= @post.html_content.truncate(1000).html_safe %>
 			<% else %>
-				<%= post.html_content.html_safe %>
+				<%= @post.html_content.html_safe %>
 			<% end %>
 		</p>
 	</div>
-	<button class="pull-right" href="/posts/<%= post.id %>" >Keep Reading</button>
 </div>
 <% end %>
