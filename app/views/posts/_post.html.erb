@@ -25,7 +25,8 @@
 				<%= post.html_content.html_safe %>
 			<% end %>
 		</p>
+			<button class="pull-right keep-reading"  ><a href="/posts/<%= post.id %>">Keep Reading</a></button>
+
 	</div>
-	<button class="pull-right" href="/posts/<%= post.id %>" >Keep Reading</button>
 </div>
 <% end %>
